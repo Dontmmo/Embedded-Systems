@@ -12,7 +12,7 @@
 #include "DIO_Interface.h"
 #include "../RegistersAddress.h"
 #include "DIO_Private.h"
-#include "DIO_Config.h"
+
 #include "../../Common/Macro.h"
 #include <stdint.h>
 /**
