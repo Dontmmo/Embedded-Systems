@@ -1,8 +1,8 @@
 /**
- * @file   DIO_Private.h
+ * @file   DIO_Config.h
  * @author Developer: Mohamed Diaa -> MohammedDiaato@gmail.com
  * @author Reviewer:  Hesham Ahmed ->
- * @brief This file contains The dio Private values
+ * @brief This file contains The dio Config values
  * @version  .1
  * @date     3/9/2025
  */
