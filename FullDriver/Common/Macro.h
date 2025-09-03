@@ -45,7 +45,38 @@
 /**------------------------------------------------------------------------------------ */
 /*Object Like Macros  */
 /**
- * 
+ * @def   Enable
+ * @brief This macro used to indicate a certain functionality is enabled
+ */
+#define Enable  1
+/**
+ * @def   Disable 
+ * @brief This macro used to indicate a certain functionality is Disabled
+ */
+#define Disable 0
+/**
+ * @def   
+ * @brief
+ */
+/**
+ * @def
+ * @brief
+ */
+/**
+ * @def
+ * @brief
+ */
+/**
+ * @def
+ * @brief
+ */
+/**
+ * @def
+ * @brief
+ */
+/**
+ * @def
+ * @brief
  */
 
 
