@@ -55,9 +55,25 @@
  */
 #define Disable 0
 /**
- * @def   
- * @brief
+ * @def   Output
+ * @brief This macro is used to say that this is an output
  */
+#define Output  1
+/**
+ * @def   Input
+ * @brief This macro is used to say that this is an Input
+ */
+#define Input   0
+/**
+ * @def   High
+ * @brief This macro is used to say that this is an High signal
+ */
+#define High  1
+/**
+ * @def   Low
+ * @brief This macro is used to say that this is an Low signal
+ */
+#define Low   0
 /**
  * @def
  * @brief
