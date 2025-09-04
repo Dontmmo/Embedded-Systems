@@ -36,7 +36,7 @@
  * @def   ClearFlag 
  * @brief Make the value of the Flag bit =0
  */
-#define ReadFlag(Reg,FlagBit)  SetBit(Reg,FlagBit)
+#define ClearFlag(Reg,FlagBit)  SetBit(Reg,FlagBit)
 /**
  * @def   ReadFlag
  * @brief Read the value of the Flag bit
