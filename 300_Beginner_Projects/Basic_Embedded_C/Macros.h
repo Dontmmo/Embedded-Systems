@@ -60,10 +60,27 @@
  * @}
  */
 
-#define GroupA  
-#define GroupB  
-#define GroupC  
-#define GroupD  
+/**
+ * @defgroup PortGroups Port group identifiers
+ * @brief   Port group macros (GroupA..GroupD) used to refer to port groups
+ * @{
+ */
+#define GroupA  1
+#define GroupB  2
+#define GroupC  3
+#define GroupD  4
+/**
+ * @}
+ */
+
+/**
+ * @defgroup LogicLevels Logic level macros
+ * @brief   Logical signal level definitions
+ * @{
+ */
 #define High    1
 #define Low     0
+/**
+ * @}
+ */
 #endif
