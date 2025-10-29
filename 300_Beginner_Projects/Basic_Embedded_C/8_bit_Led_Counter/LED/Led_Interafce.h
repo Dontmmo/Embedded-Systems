@@ -8,6 +8,7 @@
 #ifndef _LED_INTERFACE_H
 #define _LED_INTERFACE_H
 #include <stdint.h>
+#include "../../Macros.h"
 /**
  * @fn Led_Counter_Init
  * @brief

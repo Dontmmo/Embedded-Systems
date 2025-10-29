@@ -1,15 +1,38 @@
-#include "8_bit_Led_Counter/LED/Led_Interafce.h"
+#include "LED/Led_Interafce.h"
 #include <util/delay.h>
-extern uint8_t *Led_port;
+#include <stdint.h>
 #define One_Second 1000// 1000 milli second
+
 int main()
 {
-    Led_Counter_Init(1);
+    uint8_t Group=1;
+    Led_Counter_Init(Group);
+
     uint8_t Counting=0;
     
     while (1)
     {
-        Led_port=Counting;
+        switch (Group)
+    {
+    case GroupA:
+            PORTA_Reg=Counting;   
+
+        break;
+    case GroupB:
+            PORTB_Reg=Counting;      
+ 
+        break;
+    case GroupC:
+            PORTC_Reg=Counting;  
+     
+        break;
+    case GroupD:
+            PORTD_Reg=Counting;   
+        break;
+    
+    default:
+        break;
+    }
         _delay_ms(One_Second);
         Counting++;
     }

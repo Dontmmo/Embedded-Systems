@@ -5,9 +5,8 @@
  * @date        26/10/2025
  */
 #include "Led_Interafce.h"
-#include "../Macros.h"
 uint8_t Leds_Group=0;
-uint8_t*LED_Port =NULL;
+uint8_t*LED_Port =(void*)0;
 void Led_Counter_Init(uint8_t Group)
 {
     Leds_Group=Group;
