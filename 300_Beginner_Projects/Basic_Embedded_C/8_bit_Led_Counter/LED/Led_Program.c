@@ -7,22 +7,27 @@
 #include "Led_Interafce.h"
 #include "../Macros.h"
 uint8_t Leds_Group=0;
+uint8_t*LED_Port =NULL;
 void Led_Counter_Init(uint8_t Group)
 {
     Leds_Group=Group;
     switch (Group)
     {
     case GroupA:
-            DDRA_Reg=0xFF;        
+            DDRA_Reg=0xFF;   
+            LED_Port=&PORTA_Reg;
         break;
     case GroupB:
-            DDRB_Reg=0xFF;        
+            DDRB_Reg=0xFF;      
+            LED_Port=&PORTB_Reg;  
         break;
     case GroupC:
-            DDRC_Reg=0xFF;        
+            DDRC_Reg=0xFF;  
+            LED_Port=&PORTC_Reg;      
         break;
     case GroupD:
-            DDRD_Reg=0xFF;        
+            DDRD_Reg=0xFF;  
+            LED_Port=&PORTD_Reg;      
         break;
     
     default:
@@ -35,16 +40,21 @@ void Led_Counter_Stop(uint8_t Group)
     switch (Group)
     {
     case GroupA:
-            DDRA_Reg=0x00;        
+            DDRA_Reg=0x00;  
+            PORTA_Reg=0x00;      
+    
         break;
     case GroupB:
-            DDRB_Reg=0x00;        
+            DDRB_Reg=0x00;
+            PORTB_Reg=0x00;          
         break;
     case GroupC:
-            DDRC_Reg=0x00;        
+            DDRC_Reg=0x00;
+            PORTC_Reg=0x00;          
         break;
     case GroupD:
-            DDRD_Reg=0x00;        
+            DDRD_Reg=0x00;
+            PORTD_Reg=0x00;          
         break;
     
     default:
