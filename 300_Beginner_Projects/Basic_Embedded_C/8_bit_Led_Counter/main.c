@@ -12,7 +12,7 @@ int main()
     
     while (1)
     {
-        switch (Group)
+    switch (Group)
     {
     case GroupA:
             PORTA_Reg=Counting;   
